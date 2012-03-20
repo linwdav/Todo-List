@@ -1,3 +1,14 @@
-This is a simple web app that stores a list of to-do items.
+This is a social web app for sharing one's to-do list.
 
-The purpose of this project is to practice with the Play framework, MVC model, Selenium, MySQL, MongoDB, HTML, and JavaScript.
+Anticipated tech stack:
+Play framework
+Java
+MVC model
+HTML5
+CSS
+JavaScript
+JQuery
+Selenium
+MySQL
+SQLite
+MongoDB
