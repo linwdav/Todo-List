@@ -1,4 +1,4 @@
-This is a social web app for sharing one's to-do list.
+This is a social web app for sharing one's to-do list with friends.
 
 Anticipated tech stack:
 Play framework
@@ -12,3 +12,9 @@ Selenium
 MySQL
 SQLite
 MongoDB
+OpenID
+
+Further down the line:
+Facebook plug-in
+Twitter plug-in
+Mobile version
