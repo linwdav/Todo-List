@@ -1,69 +1,88 @@
 @(message: String)
 
-@main("2Do List") {
+@main("ToDo List") {
 <body>
   <div id="main">
     <div id="header">
       <div id="logo">
-      	<div class="slogan"><img src="@routes.Assets.at("images/note.png")" /></div>
-        <div class="title">2Do List</div>
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">ToDo<span class="logo_colour">List</span></a></h1>
+          <h2>Collaborative platform for sharing and working together.</h2>
+        </div>
       </div>
       <div id="menubar">
         <ul id="menu">
-          <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
-          <li class="current"><a href="index.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="mylists.html">My Lists</a></li>
+          <li><a href="myprojects.html">My Projects</a></li>
+          <li><a href="messagebox.html">Message Box</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
     <div id="site_content">
       <div id="sidebar_container">
         <div class="sidebar">
-        <!-- insert your sidebar items here -->
-        <h3>My 2Do List</h3>
-        <h4>March 20, 2012 - 5:00PM</h4>
-        <h5>Due in 10 hours 15 minutes left</h5>
-        <p>Redesign sidebar, add in table, hook up to database</p>
-        <form method="post" action="#" id="myticker">
-            <p><input class="submit" name="next" type="submit" value=" > " />
-            <input class="submit" name="done" type="submit" value=" Done " />
-            <input class="submit" name="edit" type="submit" value=" Edit " />
-            <input class="submit" name="back" type="submit" value=" < " /></p>
-          </form>
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <!-- insert your sidebar items here -->
+            <h3>My List</h3>
+            <h4>March 20, 2012 - 5:00PM</h4>
+            <h5>Due in 10 hours 15 minutes</h5>
+            <p>Redesign sidebar, add in table, hook up to database.....&nbsp;<a href="#">read more</a></p>
+            <form method="post" action="#" id="myticker">
+              <p><input class="submit" name="back" type="submit" value=" < " />
+              <input class="submit" name="edit" type="submit" value=" Edit " />
+              <input class="submit" name="done" type="submit" value=" Done " />
+              <input class="submit" name="next" type="submit" value=" > " /></p>
+            </form>
+          </div>
+          <div class="sidebar_base"></div>
         </div>
         <div class="sidebar">
-          <h3>Friends' 2Do List</h3>
-          <a href="#">Bill Gates</a>
-          <h4>March 21, 2012 - 7:00PM</h4>
-          <h5>Due in 1 day 10 hours</h5>
-          <p>Buy some toothpaste for mom.</p>
-          <form method="post" action="#" id="friendticker">
-            <p><input class="submit" name="next" type="submit" value=" > " />
-            <input class="submit" name="comment" type="submit" value=" Comment " />
-            <input class="submit" name="back" type="submit" value=" < " /></p>
-          </form>
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Friends' List</h3>
+            <h4>March 21, 2012 - 7:00PM</h4>
+            <h5>Due in 1 day 10 hours 30 minutes</h5>
+            <p>Buy some toothpaste for mom.....&nbsp;<a href="#">read more</a></p>
+            <form method="post" action="#" id="myticker">
+              <p><input class="submit" name="back" type="submit" value=" < " />
+              <input class="submit" name="comment" type="submit" value=" Comment " />
+              <input class="submit" name="next" type="submit" value=" > " /></p>
+            </form>
+          </div>
+          <div class="sidebar_base"></div>
         </div>
         <div class="sidebar">
-          <h3>Message Inbox</h3>
-          <a href="#">Bill Gates</a>
-          <h4>March 18, 2012 - 3:29PM</h4>
-          <h5></h5>
-          <p>Hey man! Hook up your MySQL, SQLite, and MongoDB database already!!!</p>
-          <form method="post" action="#" id="messages">
-            <p><input class="submit" name="next" type="submit" value=" > " />
-            <input class="submit" name="comment" type="submit" value=" Reply " />
-            <input class="submit" name="back" type="submit" value=" < " /></p>
-          </form>
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Statistics</h3>
+            <p><b>Today</b>
+              <br><a href="#">3</a> items done
+              <br><a href="#">2</a> items remaining
+            <p><b>This Week</b>
+              <br><a href="#">9</a> items done
+              <br><a href="#">5</a> items remaining
+            <p><a href="#">See detailed statistics</a>
+          </div>
+          <div class="sidebar_base"></div>
         </div>
       </div>
       <div id="content">
-        My 2Do List
+        <h1>Your ToDo List</h1>
+        table here
       </div>
     </div>
     <div id="footer">
-      <p><font size="3">Copyright &copy; David Lin | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a></font></p>
+      <p><a href="index.html">Home</a> | <a href="mylists.html">My Lists</a> | <a href="myprojects.html">My Projects</a> | <a href="messagebox.html">Message Box</a> | <a href="community.html">Community</a> | <a href="about.html">About</a> | <a href="contact.html">Contact Us</a></p>
+      <p>Copyright &copy; David Lin | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a></p>
     </div>
+    <p>&nbsp;</p>
   </div>
 </body>
 }
