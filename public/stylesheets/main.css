@@ -44,14 +44,6 @@ h5, h6
 h6
 { color: #362C20;}
 
-done
-{ color: blue;
-  font-weight: bold;}
-
-remaining
-{ color: red;
-  font-weight: bold;}
-
 a, a:hover
 { background: transparent;
   outline: none;
@@ -312,7 +304,7 @@ ul#menu li a:hover
   border-top: 1px solid #D9D5CF;
   border-bottom: 1px solid #FFF;
   margin: 0 0 20px 0;}
-  
+
 table
 { margin: 10px 0 30px 0;}
 
